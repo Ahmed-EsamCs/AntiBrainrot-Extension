@@ -1,0 +1,6 @@
+import{c as i,j as e}from"./useAppState-Dsqo8Ol0.js";/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const l=i("RotateCcw",[["path",{d:"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8",key:"1357e3"}],["path",{d:"M3 3v5h5",key:"1xhq8a"}]]);function x({label:t,hint:s,children:a}){return e.jsxs("label",{className:"grid gap-2 text-sm text-white/78",children:[e.jsx("span",{className:"font-medium text-white",children:t}),a,s?e.jsx("span",{className:"text-xs leading-relaxed text-white/45",children:s}):null]})}const r="focus-ring w-full rounded-lg border border-white/10 bg-white/[0.07] px-3 py-2.5 text-sm text-white placeholder:text-white/30";function c(t){return e.jsx("input",{className:r,...t})}function d(t){return e.jsx("textarea",{className:`${r} min-h-24 resize-y leading-relaxed`,...t})}function o({label:t,value:s,icon:a}){return e.jsxs("div",{className:"rounded-lg border border-white/10 bg-white/[0.06] p-3",children:[e.jsxs("div",{className:"mb-2 flex items-center gap-2 text-white/45",children:[a,e.jsx("span",{className:"text-xs font-medium uppercase tracking-[0.16em]",children:t})]}),e.jsx("div",{className:"text-xl font-semibold text-white",children:s})]})}export{x as F,l as R,o as S,d as T,c as a};

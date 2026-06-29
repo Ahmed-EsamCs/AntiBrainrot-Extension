@@ -1,0 +1,1 @@
+const a=e=>e.split(/[\n,]/).map(t=>t.trim().replace(/^https?:\/\//,"").replace(/^www\./,"").replace(/\/.*$/,"").toLowerCase()).filter(Boolean),r=e=>{try{return new URL(e).hostname.replace(/^www\./,"").toLowerCase()}catch{return""}},n=(e,t)=>e===t||e.endsWith(`.${t}`);export{n as d,r as h,a as n};

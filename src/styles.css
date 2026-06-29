@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #090b12;
+  color: #f7fbff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(69, 225, 255, 0.14), transparent 28rem),
+    radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.16), transparent 26rem),
+    linear-gradient(145deg, #090b12 0%, #0f1220 54%, #090b12 100%);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+select {
+  color: #f7fbff;
+  background-color: rgba(255, 255, 255, 0.07);
+  -webkit-text-fill-color: #f7fbff;
+  color-scheme: dark;
+}
+
+select:focus,
+select:active {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+select:disabled {
+  color: rgba(247, 251, 255, 0.45);
+  -webkit-text-fill-color: rgba(247, 251, 255, 0.45);
+}
+
+select:invalid,
+select.placeholder {
+  color: rgba(247, 251, 255, 0.45);
+  -webkit-text-fill-color: rgba(247, 251, 255, 0.45);
+}
+
+select option {
+  color: #f7fbff;
+  background-color: #111522;
+}
+
+select option:hover,
+select option:focus {
+  color: #ffffff;
+  background-color: #1f2937;
+}
+
+select option:checked {
+  color: #090b12;
+  background-color: #45e1ff;
+}
+
+select option:disabled,
+select option[value=""] {
+  color: rgba(247, 251, 255, 0.45);
+}
+
+button {
+  cursor: pointer;
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(17, 21, 34, 0.72);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.focus-ring {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-ring:focus-visible {
+  outline-color: #45e1ff;
+}
+
+.meter {
+  background: linear-gradient(90deg, #45e1ff, #8b5cf6);
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+.brain-pulse {
+  animation: brainPulse 2.8s ease-in-out infinite;
+}
+
+@keyframes brainPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.92;
+  }
+  50% {
+    transform: scale(1.035);
+    opacity: 1;
+  }
+}
